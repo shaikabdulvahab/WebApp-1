@@ -64,7 +64,7 @@
 					<password>s3cret</password>
 				</configuration>
 			</plugin>
-			<!--
+		
 			<plugin>
 				1. Add/update this in tomcat-home/conf/tomcat-users.xml file
 					<role rolename="manager-gui"/>
@@ -72,7 +72,7 @@
 					Run the maven goal tomcat7:deploy to deploy your war package to tomcat server.
 				2. Add the server details in settings.xml file
 						<server>
-							<id>TomcatServer</id> -- this id <value> should match with below <server> value
+							<id>TomcatServer</id>
 							<username>tomcat</username>
 							<password>s3cret</password>
 						</server>
@@ -89,7 +89,7 @@
 			-->
 		</plugins>
 	</build>
-	<!--
+
 	<repositories>
 		<repository>
 			<id>nexus</id>
@@ -109,7 +109,7 @@
 			<url>http://${nexusServer}:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	-->
+	
 	<profiles>
 		<profile>
 			<id>sonar</id>
