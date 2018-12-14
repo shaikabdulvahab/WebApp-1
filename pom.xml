@@ -26,7 +26,7 @@
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
-		<plugins>
+		<!--<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
@@ -66,7 +66,7 @@
 			</plugin>
 		
 			<plugin>
-				<!--  1. Add/update this in tomcat-home/conf/tomcat-users.xml file
+				 1. Add/update this in tomcat-home/conf/tomcat-users.xml file
 					<role rolename="manager-gui"/>
 					<user username="tomcat" password="s3cret" roles="admin,tomcat,manager-gui,manager-script"/>
 					Run the maven goal tomcat7:deploy to deploy your war package to tomcat server.
@@ -86,8 +86,9 @@
 					<server>TomcatServer</server>
 				</configuration>
 			</plugin>
-			-->
+			
 		</plugins>
+		-->
 	</build>
 
 	<repositories>
